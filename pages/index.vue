@@ -1,0 +1,1 @@
+<template>index.vue</template>
