@@ -1,12 +1,10 @@
 <template>
   <div>
-    Some default layout shared across all pages
+    <div>레이아웃</div>
     <slot />
   </div>
 </template>
 <script setup>
 import login from "~/middleware/login";
-import { useRoute } from "vue-router";
-import { computed } from "vue";
 addRouteMiddleware(login);
 </script>
