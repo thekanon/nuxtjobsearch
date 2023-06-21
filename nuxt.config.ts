@@ -16,7 +16,15 @@ export default defineNuxtConfig({
     server: {
       hmr: true,
     },
+    define: {
+      "process.env.DEBUG": false,
+    },
   },
+  css: ["vuetify/lib/styles/main.sass"],
+  build: {
+    transpile: ["vuetify"],
+  },
+
   modules: ["@pinia/nuxt"],
   pinia: {
     autoImports: [
