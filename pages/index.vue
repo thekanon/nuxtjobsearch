@@ -2,15 +2,18 @@
   <div class="container">
     <h1 class="title">타이틀</h1>
     <div class="search">
-      <input type="text" v-model="searchText" placeholder="검색하세요" />
+      <Input />
     </div>
   </div>
 </template>
 <script>
 import { ref } from "vue";
-
+import Input from "~/components/atoms/Input.vue";
 export default {
   name: "IndexPage",
+  components: {
+    Input: Input,
+  },
   setup() {
     const searchText = ref("");
 
