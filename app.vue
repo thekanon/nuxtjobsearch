@@ -21,12 +21,12 @@ import AppSidebar from "@/components/template/AppSidebar.vue";
 
 const items = ref([
   { text: "대시보드", link: "/expert/dashboard" },
-  { text: "임직원 관리", link: "/tmp/임직원관리" },
-  { text: "이용내역", link: "/tmp/이용내역" },
-  { text: "계약정보", link: "/tmp/계약정보" },
-  { text: "보고서(Phase2)", link: "/tmp/보고서" },
-  { text: "쿼카 입양처", link: "/tmp/%EC%9E%85%EC%96%91%EC%B2%98" },
-  { text: "쿼카 서식지", link: "/tmp/login/a" },
+  { text: "임직원 관리", link: "/sample/임직원관리" },
+  { text: "이용내역", link: "/sample/이용내역" },
+  { text: "계약정보", link: "/sample/계약정보" },
+  { text: "보고서(Phase2)", link: "/sample/보고서" },
+  { text: "쿼카 입양처", link: "/sample/%EC%9E%85%EC%96%91%EC%B2%98" },
+  { text: "쿼카 서식지", link: "/sample/login/a" },
 ]);
 const userInfo = ref({
   name: "김로니",

@@ -21,12 +21,12 @@ import Dashboard from "@/pages/expert/dashboard.vue";
 
 const items = ref([
   { text: "대시보드", link: "/expert/dashboard" },
-  { text: "임직원 관리", link: "/tmp/Page" },
-  { text: "이용내역", link: "/tmp/Page" },
-  { text: "계약정보", link: "/tmp/Page" },
-  { text: "보고서(Phase2)", link: "/tmp/Page" },
-  { text: "쿼카 입양처", link: "/tmp/Page" },
-  { text: "쿼카굴", link: "/tmp/login/a" },
+  { text: "임직원 관리", link: "/sample/Page" },
+  { text: "이용내역", link: "/sample/Page" },
+  { text: "계약정보", link: "/sample/Page" },
+  { text: "보고서(Phase2)", link: "/sample/Page" },
+  { text: "쿼카 입양처", link: "/sample/Page" },
+  { text: "쿼카굴", link: "/sample/login/a" },
 ]);
 
 const selectedComponent = ref(null);

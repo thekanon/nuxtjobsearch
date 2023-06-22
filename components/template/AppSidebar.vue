@@ -1,17 +1,7 @@
 <template>
   <div class="sidebar">
     <v-card class="sidebar rounded-0" flat>
-      <v-list dense class="sideUserInfo">
-        <v-list-item>
-          <v-list-item-title>
-            <Text :text="userMessage" />
-          </v-list-item-title>
-        </v-list-item>
-        <v-card-actions>
-          <v-btn variant="outlined"> 계정관리 </v-btn>
-          <v-btn variant="outlined"> 로그아웃 </v-btn>
-        </v-card-actions>
-      </v-list>
+      <SideUserInfo :userInfo="userInfo" />
       <v-list :lines="false" class="side-list">
         <v-list-item
           class="rounded-lg"
@@ -36,6 +26,7 @@
 import { ref, computed, defineEmits } from "vue";
 import Text from "~/components/atoms/Text.vue";
 import Blank from "~/components/atoms/Blank.vue";
+import SideUserInfo from "~/components/molecules/SideUserInfo.vue";
 const props = defineProps({
   items: {
     type: Array,
@@ -48,13 +39,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-const userMessage = computed(
-  () => `안녕하세요, 
-  ${props.userInfo.name}(${props.userInfo.company})님!
-  환영합니다.`
-);
-console.log(userMessage.value);
 </script>
 
 <style>
@@ -67,10 +51,6 @@ console.log(userMessage.value);
   z-index: 1;
   margin-left: 10px;
   background-color: #ffffff;
-}
-.sideUserInfo {
-  background-color: #eeeeee;
-  color: #000000;
 }
 .sideUserInfo button {
   z-index: 1;
