@@ -1,5 +1,5 @@
 <template>
-  <input type="text" v-model="searchText" placeholder="검색하세요" />
+  <input />
 </template>
 <script>
 export default {

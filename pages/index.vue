@@ -1,18 +1,19 @@
 <template>
   <div class="container">
     <h1 class="title">타이틀</h1>
-    <div class="search">
-      <Input />
-    </div>
+
+    <ImageWrapper src="/img/findmeintroduce.png" />
   </div>
 </template>
 <script>
 import { ref } from "vue";
 import Input from "~/components/atoms/Input.vue";
+import ImageWrapper from "~/components/atoms/ImageWrapper.vue";
 export default {
   name: "IndexPage",
   components: {
     Input: Input,
+    ImageWrapper,
   },
   setup() {
     const searchText = ref("");
@@ -34,7 +35,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   background-color: #333;
   color: #f8f8f8;

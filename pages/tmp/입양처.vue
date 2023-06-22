@@ -9,7 +9,7 @@
     <button
       @click="
         () => {
-          router.push('/login/쿼카');
+          router.push('login/%EC%BF%BC%EC%B9%B4');
         }
       "
     >
